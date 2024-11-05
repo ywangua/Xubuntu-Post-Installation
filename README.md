@@ -33,7 +33,7 @@ sudo nano grub
 sudo update-grub
 sudo reboot
 ```
-If rebooting successfully, we will continue to install other software/programs
+If rebooting successfully, we will continue to install other software/programs. Otherwise, it is not worthwhile to continue.
 
 ## Install google chrome
 ```
