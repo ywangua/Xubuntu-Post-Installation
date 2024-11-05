@@ -45,7 +45,7 @@ Change the default browser to Google Chrome in `Default Applications`.
 
 ## Install common apps from repository
 ```
-sudo nala install -y gimp inkscape blender xournalpp evince cheese conky-all goldendict 7zip 7zip-rar flameshot ttf-mscorefonts-installer net-tools htop okular pdfarranger lyx texlive-full ibus-rime vim rclone wine winetricks obs-studio python-is-python3 pymol
+sudo nala install -y gimp inkscape blender xournalpp evince cheese conky-all goldendict 7zip 7zip-rar flameshot ttf-mscorefonts-installer net-tools htop okular pdfarranger lyx texlive-full ibus-rime vim rclone wine winetricks obs-studio python-is-python3 pymol git
 ```
 I did not include python packages (including Jupyter lab/notebook) here, as it depends on the project and need. They can be installed later
 
