@@ -70,7 +70,7 @@ mkdir ~/bin
 mv Zotero_linux-x86_64 ~/bin/zotero
 cd ~/bin/zotero
 ./set_launcher_icon 
-ln -s /home/yongwang/bin/zotero/zotero.desktop /home/yongwang/.local/share/applications/zotero.desktop
+ln -s /home/$USER/bin/zotero/zotero.desktop /home/$USER/.local/share/applications/zotero.desktop
 ```
 At this point, start zotero, close it. Then copy and replace your profile files to ~/.zotero/zotero/ to allow easy sync.
 
@@ -79,9 +79,9 @@ At this point, start zotero, close it. Then copy and replace your profile files 
 wget https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
 unzip fiji-linux64.zip -d ~/bin/
 cd ~/bin/Fiji.app
-ln -s /home/yongwang/bin/Fiji.app/ImageJ-linux64 ~/bin/fiji
-ln -s /home/yongwang/bin/Fiji.app/ImageJ-linux64 ~/bin/imagej
-ln -s /home/yongwang/bin/Fiji.app/ImageJ-linux64 ~/bin/ImageJ
+ln -s /home/$USER/bin/Fiji.app/ImageJ-linux64 ~/bin/fiji
+ln -s /home/$USER/bin/Fiji.app/ImageJ-linux64 ~/bin/imagej
+ln -s /home/$USER/bin/Fiji.app/ImageJ-linux64 ~/bin/ImageJ
 ```
 
 ## Set up rclone
