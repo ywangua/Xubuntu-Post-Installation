@@ -2,14 +2,19 @@
 Notes for installing useful software/programs for research after installing Xubuntu 24.04
 
 ## Update/upgrade and install nala
+* Install nala
 ```
 sudo apt update
 sudo apt install -y nala
+```
+* Update and upgrade apps
+```
 sudo nala update
 sudo nala upgrade
 ```
 
 ## Fix Dell laptop webcam
+* Install driver and patch for the webcam
 ```
 uname -r
 sudo nala install linux-modules-ipu6-6.8.0-48-generic linux-modules-ivsc-generic
@@ -17,10 +22,14 @@ sudo add-apt-repository ppa:oem-solutions-group/intel-ipu6
 sudo nala update
 sudo nala install libcamhal-ipu6ep0
 sudo add-apt-repository -r ppa:oem-solutions-group/intel-ipu6
+```
+* Sometimes the laptop may get stuck at the boot stage. However, the issue can be resolved by displaying the booting text (don't know why, but it works).
+```
 cd /etc/default/
 sudo nano grub
-# remove "quiet splash" in GRUB_CMDLINE_LINUX_DEFAULT
-# GRUB_CMDLINE_LINUX_DEFAULT=""
+```
+* remove "quiet splash" in GRUB_CMDLINE_LINUX_DEFAULT so that `GRUB_CMDLINE_LINUX_DEFAULT=""`
+```
 sudo update-grub
 sudo reboot
 ```
