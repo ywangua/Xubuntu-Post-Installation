@@ -86,6 +86,7 @@ ln -s /home/$USER/bin/Fiji.app/ImageJ-linux64 ~/bin/ImageJ
 ```
 
 ## Install VMD
+Go to `https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD` and download VMD
 
 
 ## Set up rclone
