@@ -18,5 +18,7 @@ sudo apt update
 sudo apt install -y nala
 sudo nala update
 sudo nala upgrade
+echo ""
+echo ""
 read -p "Press <Enter> to Continue ..."
 
