@@ -29,7 +29,7 @@ function install_common_apps()
     sudo nala install -y xournalpp evince okular pdfarranger goldendict
     sudo nala install -y 7zip 7zip-rar
     sudo nala install -y net-tools htop conky-all git
-    sudo nala install -y ttf-mscorefonts-installer lyx texlive-full
+    sudo nala install -y ttf-mscorefonts-installer lyx texlive
     sudo nala install -y ibus-rime
     sudo nala install -y vim
     sudo nala install -y python-is-python3 python3-pip python3-virtualenv pymol
