@@ -147,7 +147,7 @@ Other Information:
 
 * VMD: download VMD from https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD, and install it following the Installation Guide at https://www.ks.uiuc.edu/Research/vmd/current/ig/ig.html
 
-* GoldenDict: dictionaries should be placed in ~/.goldendict
+* GoldenDict: dictionaries and config should be placed in ~/.goldendict
 
 * Startup Apps: create xxx.desktop in the ~/.config/autostart/ folder
 
