@@ -131,7 +131,12 @@ function install_python_packages()
 function show_other_info()
 {
 cat > file.tmp <<'_EOF_'
+****************************************
+*   Post-Install Script for Xubuntu    *
+****************************************
+
 Other Information:
+==================
 
 * Zotero: for easy sync, copy and paste your profile files to ~/.zotero/zotero/ mannually.
 
@@ -157,6 +162,7 @@ _EOF_
 clear
 echo "**************************************************"
 echo "*        Post-Install Script for Xubuntu         *"
+echo "*                 Xubuntu 24.04                  *"
 echo "*               Author: Yong Wang                *"
 echo "**************************************************"
 echo ""
@@ -197,13 +203,8 @@ do
 done
 
 clear
-echo "**************************************************"
-echo "*        Post-Install Script for Xubuntu         *"
-echo "*               Author: Yong Wang                *"
-echo "**************************************************"
 echo ""
-echo ""
-read -p "Post-Installation is DONE! Press <Enter> to Continue ..."
+read -p "    Post-Installation is DONE! Press <Enter> to Continue ...   "
 clear
 
 
