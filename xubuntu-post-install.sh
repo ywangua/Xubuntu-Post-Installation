@@ -78,6 +78,11 @@ function install_common_apps()
     mkdir ~/.zotero/zotero
     echo ""
     echo "For easy sync, you can copy and paste your profile files to ~/.zotero/zotero/ mannually."
+    # cpdf
+    cd ~/Downloads
+    wget https://github.com/coherentgraphics/cpdf-binaries/archive/master.zip
+    unzip ./master.zip
+    cp ./cpdf-binaries-master/Linux-Intel-64bit/cpdf ~/bin/cpdf
 }
 
 function fix_dell_webcam()
