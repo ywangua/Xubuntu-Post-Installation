@@ -183,9 +183,9 @@ choices=$(dialog \
     --checklist "Select options to install:" 14 60 10 \
     "1" "Upgrading system" on \
     "2" "Install commonly used apps" on \
-    "3" "Fix Dell webcam" off \
-    "4" "Set up Box Drive" off \
-    "5" "Install Python Packages" on \
+    "3" "Set up Box Drive" off \
+    "4" "Install Python Packages" on \
+    "5" "Fix Dell webcam" off \    
     "6" "Show other info" off \
     2>&1 >/dev/tty)
 clear
@@ -195,9 +195,9 @@ do
     case $choice in
     1) upgrade_system ;;
     2) install_common_apps ;;
-    3) fix_dell_webcam ;;
-    4) set_up_box_drive ;;
-    5) install_python_packages ;;
+    3) set_up_box_drive ;;
+    4) install_python_packages ;;
+    5) fix_dell_webcam ;;
     6) show_other_info ;;
     esac
 done
