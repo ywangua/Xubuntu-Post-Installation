@@ -31,7 +31,7 @@ function install_common_apps()
     echo ""
     # Apps that can be installed from apt repositories
     sudo nala install -y gimp inkscape blender cheese flameshot obs-studio vlc
-    sudo nala install -y xournalpp evince okular pdfarranger goldendict
+    sudo nala install -y xournalpp evince okular pdfarranger goldendict freeplane
     sudo nala install -y 7zip 7zip-rar
     sudo nala install -y net-tools htop conky-all git speedtest-cli
     sudo nala install -y ttf-mscorefonts-installer lyx texlive
