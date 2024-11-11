@@ -55,7 +55,7 @@ function install_common_apps()
     wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb
     sudo nala install -y ./onlyoffice-desktopeditors_amd64.deb
     # Zoom
-    wget https://cdn.zoom.us/prod/6.2.6.2503/zoom_amd64.deb
+    wget https://zoom.us/client/latest/zoom_amd64.deb
     sudo nala install -y ./zoom_amd64.deb
     # Teams
     wget https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.11.3/teams-for-linux_1.11.3_amd64.deb
