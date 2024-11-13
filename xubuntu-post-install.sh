@@ -197,9 +197,9 @@ choices=$(dialog \
     --checklist "Select options to install:" 14 60 10 \
     "1" "Upgrading system" on \
     "2" "Install commonly used apps" on \
-    "3" "Set up Box Drive" off \
-    "4" "Install Python Packages" on \
-    "5" "Fix Dell webcam" off \    
+    "3" "Fix Dell webcam" off \
+    "4" "Set up Box Drive" off \
+    "5" "Install Python Packages" on \
     "6" "Show other info" off \
     2>&1 >/dev/tty)
 clear
