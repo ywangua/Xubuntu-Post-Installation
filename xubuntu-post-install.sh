@@ -49,8 +49,8 @@ function install_common_apps()
     wget https://github.com/rustdesk/rustdesk/releases/download/1.3.2/rustdesk-1.3.2-x86_64.deb
     sudo nala install -y ./rustdesk-1.3.2-x86_64.deb
     # VS Code
-    wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/65edc4939843c90c34d61f4ce11704f09d3e5cb6/code_1.95.1-1730355339_amd64.deb
-    sudo nala install -y ./code_1.95.1-1730355339_amd64.deb
+    wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O ./code_latest_amd64.deb
+    sudo nala install -y ./code_latest_amd64.deb
     # OnlyOffice
     wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb
     sudo nala install -y ./onlyoffice-desktopeditors_amd64.deb
