@@ -22,5 +22,5 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -
 sudo nala install -y ./google-chrome-stable_current_amd64.deb
 
 wget 'https://zoom.us/client/latest/zoom_amd64.deb' -O ./zoom_amd64.deb
-sudo nala -y install ./zoom_amd64.deb
+sudo nala install -y ./zoom_amd64.deb
 
