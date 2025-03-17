@@ -36,7 +36,7 @@ function install_common_apps()
     sudo nala install -y net-tools htop conky-all git speedtest-cli
     sudo nala install -y ttf-mscorefonts-installer lyx texlive
     sudo nala install -y ibus-rime
-    sudo nala install -y vim
+    sudo nala install -y vim neovim npm
     sudo nala install -y python-is-python3 python3-pip python3-virtualenv pymol
     sudo nala install -y wine winetricks
     sudo nala install -y rclone
