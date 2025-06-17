@@ -233,9 +233,31 @@ uv pip install jupyterlab mdanalysis trackpy
 -   **Startup Apps**: create `xxx.desktop` in the `~/.config/autostart/`
     folder
 
-## Fix WebCam (DO NOT USE)
+## WebCam
 
-This does not work at the moment.
+### USB WebCam
+
+Sometimes, the auto-exposure does not work very well if there is high
+reflection from the background. One can turn it off.
+
+-   Get the device ID (`/dev/videoxxx`)
+
+``` bash
+sudo apt install v4l-utils
+v4l2-ctl --list-devices
+```
+
+Turn off auto-exposure (and set exposure manually)
+
+``` bash
+4l2-ctl -d /dev/video9 -c auto_exposure=1
+v4l2-ctl -d /dev/video9 -c exposure_time_absolute=300
+```
+
+### Build-in WebCam (DO NOT USE)
+
+Dell Latitude 7440 build-in webcam does not work at the moment. Below
+are some code that worked previously.
 
 ``` bash
 uname -r
