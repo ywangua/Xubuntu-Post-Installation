@@ -159,7 +159,8 @@ sudo update-grub
 
 ``` bash
 sudo nala install -y ubuntu-desktop
-sudo nala install -y chrome-gnome-shell 
+sudo nala install -y chrome-gnome-shell
+sudo nala install -y gnome-sushi
 ```
 
 It is strongly recommended to install several `gnome-shell` extensions
