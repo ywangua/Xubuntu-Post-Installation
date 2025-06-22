@@ -278,9 +278,9 @@ Sometimes, automatic updates (too early) will mess up the system. So it might be
     - Close the window.
 2. Disabling Unattended Upgrades
    - In terminal
-    ```bash
-    sudo nano /etc/apt/apt.conf.d/20auto-upgrades
-    ```
+     ```bash
+     sudo nano /etc/apt/apt.conf.d/20auto-upgrades
+     ```
    - Set `APT::Periodic::Update-Package-Lists` to `0`.
    - Set `APT::Periodic::Unattended-Upgrade` to `0`.
    - Save and close
