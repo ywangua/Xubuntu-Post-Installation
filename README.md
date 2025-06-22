@@ -268,3 +268,32 @@ sudo nala update
 sudo nala install -y libcamhal-ipu6ep0
 sudo add-apt-repository -r ppa:oem-solutions-group/intel-ipu6 
 ```
+
+## Disable Automatic Updater (Optional)
+Sometimes, automatic updates (too early) will mess up the system. So it might be desired to disable the automatic updaters.
+1. Disable Automatic Update Checks:
+    - Open `Software & Updates`.
+    - Go to the Updates tab.
+    - Change the setting for Automatically check for updates to Never.
+    - Close the window.
+2. Disabling Unattended Upgrades
+   - In terminal
+    ```bash
+    sudo nano /etc/apt/apt.conf.d/20auto-upgrades
+    ```
+   - Set `APT::Periodic::Update-Package-Lists` to `0`.
+   - Set `APT::Periodic::Unattended-Upgrade` to `0`.
+   - Save and close
+   - Run
+     ```bash
+     sudo dpkg-reconfigure unattended-upgrades
+     ```
+     Make sure you select "No" and "Keep local copy" when being asked
+3. Disable autostart of Update-Notifier
+   - Edit `update-notifier.desktop`
+     ```bash
+     sudo nano /etc/xdg/autostart/update-notifier.desktop
+     ```
+   - Add `Hidden=true` to the end of the file (so that it will be treated as if it was deleted by the sytem)
+4. Restart computer
+     
