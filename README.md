@@ -288,7 +288,7 @@ Sometimes, automatic updates (too early) will mess up the system. So it might be
      ```bash
      sudo dpkg-reconfigure unattended-upgrades
      ```
-     Make sure you select "No" and "Keep local copy" when being asked
+     Make sure you select "No" and "Keep the local version ..." when being asked
 3. Disable autostart of Update-Notifier
    - Edit `update-notifier.desktop`
      ```bash
