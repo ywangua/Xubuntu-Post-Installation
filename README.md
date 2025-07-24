@@ -153,7 +153,6 @@ Remove `quiet splash` for the line of `GRUB_CMDLINE_LINUX_DEFAULT=` of
 the grub file, and then update the grub.
 
 ``` bash
-sudo nano /etc/default/grub
 sudo update-grub
 ```
 
