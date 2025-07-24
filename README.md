@@ -37,8 +37,6 @@ sudo apt install -y nala
 
 -   RustDesk
 
--   OnlyOffice and WPS Office
-
 -   FIJI ImageJ
 
 -   CPDF
@@ -88,10 +86,6 @@ cd ~/Downloads
 wget 'https://github.com/rustdesk/rustdesk/releases/download/1.3.2/rustdesk-1.3.2-x86_64.deb'
 sudo nala install -y ./rustdesk-1.3.2-x86_64.deb
 rm ./rustdesk-1.3.2-x86_64.deb
-
-wget 'https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb'
-sudo nala install -y ./onlyoffice-desktopeditors_amd64.deb
-rm ./onlyoffice-desktopeditors_amd64.deb
 
 wget 'https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps-office_11.1.0.11723.XA_amd64.deb'
 sudo nala install -y ./wps-office_11.1.0.11723.XA_amd64.deb
