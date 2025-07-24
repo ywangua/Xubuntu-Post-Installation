@@ -145,6 +145,10 @@ Note that `pandoc` may not be the latest version. One can go to
 
 ## Update GRUB to show progress during turning on/off (if preferred)
 
+``` bash
+sudo nano /etc/default/grub
+```
+
 Remove `quiet splash` for the line of `GRUB_CMDLINE_LINUX_DEFAULT=` of
 the grub file, and then update the grub.
 
