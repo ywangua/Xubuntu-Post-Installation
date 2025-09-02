@@ -187,12 +187,13 @@ rclone config
 Add shortcuts for mounting/unmounting Box Drive.
 
 ``` bash
-echo "rclone mount box:/ ~/Box --vfs-cache-mode full --transfers 10 --daemon" > ~/bin/boxmount
+echo "rclone mount box:/ ~/Box --vfs-cache-mode full --no-checksum --transfers 40 --vfs-read-chunk-streams 16 --vfs-read-chunk-size 4M --daemon" > ~/bin/boxmount
 chmod +x ~/bin/boxmount
 echo "fusermount -u ~/Box" > ~/bin/boxunmount
 chmod +x ~/bin/boxunmount
 boxmount
 ```
+Note that `--vfs-read-chunk-streams` works for newer versions of `rclone`. You may need to download it from https://rclone.org/downloads/ and upgrade `rclone`
 
 ## Python
 
