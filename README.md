@@ -18,41 +18,21 @@ sudo apt install -y nala
 ## Install various third party (non-apt) apps
 
 -   Google Chrome
-
 -   VS Code
-
 -   Zoom
-
 -   Teams
-
 -   Zotero
-
-    -   For easy sync, you can copy and paste your profile files to
-        `~/.zotero/zotero/` mannually
-
-    -   Double check if `zotero.desktop` is in
-        `~/.local/share/applications/`. If not, run
-        `ln -s /home/$USER/bin/zotero/zotero.desktop /home/$USER/.local/share/applications/zotero.desktop`
-        in terminal
-
+    -   For easy sync, you can copy and paste your profile files to `~/.zotero/zotero/` mannually
+    -   Double check if `zotero.desktop` is in `~/.local/share/applications/`. If not, run `ln -s /home/$USER/bin/zotero/zotero.desktop /home/$USER/.local/share/applications/zotero.desktop` in terminal
 -   RustDesk
-
 -   FIJI ImageJ
-
 -   CPDF
-
 -   Quarto
-
 -   uv
-
 -   Rust
-
     -   It requires either `source` or `restart` of the terminal
-
 -   Typst
-
     -   Make sure terminal is restarted before install Typst
-
 ``` bash
 cd ~/Downloads
 
@@ -80,16 +60,12 @@ mv Zotero_linux-x86_64 ~/bin/zotero
 cd ~/bin/zotero
 ./set_launcher_icon 
 ln -s /home/$USER/bin/zotero/zotero.desktop /home/$USER/.local/share/applications/zotero.desktop
-mkdir ~/.zotero/zotero
+mkdir -p ~/.zotero/zotero
 cd ~/Downloads
 
 wget 'https://github.com/rustdesk/rustdesk/releases/download/1.3.2/rustdesk-1.3.2-x86_64.deb'
 sudo nala install -y ./rustdesk-1.3.2-x86_64.deb
 rm ./rustdesk-1.3.2-x86_64.deb
-
-wget 'https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps-office_11.1.0.11723.XA_amd64.deb'
-sudo nala install -y ./wps-office_11.1.0.11723.XA_amd64.deb
-rm ./wps-office_11.1.0.11723.XA_amd64.deb
 
 wget 'https://downloads.imagej.net/fiji/latest/fiji-linux64.zip'
 unzip fiji-linux64.zip -d ~/bin/
