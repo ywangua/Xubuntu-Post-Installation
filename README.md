@@ -219,7 +219,23 @@ uv pip install jupyterlab mdanalysis trackpy
 Sometimes, the auto-exposure does not work very well if there is high
 reflection from the background. One can turn it off.
 
--   Get the device ID (`/dev/videoxxx`)
+-   Get the device ID (`/dev/videoXXX`)
+
+Get the list of devices
+``` bash
+v4l2-ctl --list-devices
+```
+
+Check which one has the capture capability
+``` bash
+for device in /dev/video*; do udevadm info "$device" | { grep -q 'CAPABILITIES=.*:capture:' && echo "$device" ;}; done
+```
+
+Double check if it is working
+``` bash
+cheese -d /dev/videoXXX
+```
+
 
 ``` bash
 sudo apt install v4l-utils
